@@ -17,7 +17,7 @@ const Sidebar = () => {
         <>
             <div
                 className={`w-[80%] md:w-[40%] fixed lg:static top-0 ${showSidebar ? "left-0" : "-left-full"
-                    } lg:w-80 h-full overflow-y-scroll text-gray-400 transition-all bg-[#181A20] p-4 lg:p-0 shadow-2xl lg:shadow-none z-50 `}
+                    } lg:w-80 h-full  text-gray-400 transition-all bg-[#181A20] p-4 lg:p-0 shadow-2xl lg:shadow-none z-50 `}
             >
                 {/* Search */}
                 <div className="bg-[#362C29]/50 rounded-2xl p-4 mb-4">
@@ -146,45 +146,8 @@ const Sidebar = () => {
                         </button>
                     </form>
                 </div>
-                {/* Social media */}
-                <ul className="flex items-center justify-between">
-                    <li>
-                        <a
-                            href="https://www.facebook.com/jotreDev"
-                            target="_blank"
-                            className="text-2xl"
-                        >
-                            <RiFacebookLine />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.youtube.com/channel/UCgA_JTg3zj1928UVAiG7uyg"
-                            target="_blank"
-                            className="text-2xl"
-                        >
-                            <RiYoutubeLine />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.instagram.com/jotredev"
-                            target="_blank"
-                            className="text-2xl"
-                        >
-                            <RiInstagramLine />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.twitter.com/jotredev"
-                            target="_blank"
-                            className="text-2xl"
-                        >
-                            <RiTwitterLine />
-                        </a>
-                    </li>
-                </ul>
+                
+                
             </div>
             {/* Button mobile */}
             <button
