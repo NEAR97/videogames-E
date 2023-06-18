@@ -18,35 +18,61 @@ const Header = () => {
                     <RiCloseLine />
                 </button>
                 <ul className='mt-20'>
-                    <NavLink to="/" className="text-4xl block text-center p-4">
+                    <NavLink to="/" className="text-4xl block text-center p-4 ">
                         Home
                     </NavLink>
-                    <NavLink to="/store" className="text-4xl block text-center p-">
+                    <NavLink to="/store" className="text-4xl block text-center p-4">
                         Store
                     </NavLink>
-                    <NavLink to="/streams" className="text-4xl block text-center p-">
+                    <NavLink to="/streams" className="text-4xl block text-center p-4">
                         Streams
                     </NavLink>
-                    <NavLink to="/news" className="text-4xl block text-center p-" >
+                    <NavLink to="/news" className="text-4xl block text-center p-4" >
                         News
                     </NavLink>
                 </ul>
 
-                <ul className='flex items-center gap-6 text-3xl'>
-                    <NavLink>
+            </div>
+            <ul className="hidden lg:flex items-center gap-6 mb-4">
+                <li>
+                    <NavLink to="/" className="text-4xl block text-center p-4 hover:text-[#E58D27] transition-colors">
+                        Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/store" className="text-4xl block text-center p-4 hover:text-[#E58D27] transition-colors">
+                        Store
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/streams" className="text-4xl block text-center p-4 hover:text-[#E58D27] transition-colors">
+                        Streams
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/news" className="text-4xl block text-center p-4 hover:text-[#E58D27] transition-colors" >
+                        News
+                    </NavLink>
+                </li>
+            </ul>
+            {/* Menu */}
+            <ul className="flex items-center gap-6 text-xl mb-3">
+                <li>
+                    <NavLink to="/wishlist">
                         <button className="hover:text-[#E58D27] transition-colors">< RiHeart3Line /></button>
                     </NavLink>
-                    <NavLink>
+                </li>
+                <li>
+                    <NavLink to="/cart">
                         <button className="hover:text-[#E58D27] transition-colors">< RiShoppingCart2Line /></button>
                     </NavLink>
-                    <NavLink>
+                </li>
+                <li>
+                    <NavLink to="/profile">
                         <button className="hover:text-[#E58D27] transition-colors"><img src='https://img.freepik.com/foto-gratis/alegre-chica-negocios-rizada-gafas_176420-206.jpg' className='w-8 h-8 object-cover rounded-full'></img></button>
                     </NavLink>
-
-
-                </ul>
-
-            </div>
+                </li>
+            </ul>
 
 
         </header>
