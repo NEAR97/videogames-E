@@ -4,7 +4,7 @@ import { RiShoppingCart2Line, RiHeart3Line } from "react-icons/ri";
 
 const Header = () => {
   return (
-   <header className='h-[10vh] text-gray-300 p-4 flex items-center justify-between'>
+   <header className='h-[7vh] lg:h-[10vh] text-gray-400 py-4 px-10 flex items-center justify-between z-40'>
         <ul className='flex items-center gap-6'>
         <NavLink to="/" className="hover:text-[#E58D27] transition-colors">
             Home
