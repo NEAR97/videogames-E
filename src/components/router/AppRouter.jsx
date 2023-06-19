@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
 import HomePage from '../Home/HomePage'
+import CardPage from '../Home/CardPage'
 
 const AppRouter = () => {
   return (
@@ -11,7 +12,7 @@ const AppRouter = () => {
                 <Route path="store"  />
                 
                 <Route path="streams"  />
-                <Route path="hero/:id"  />
+                <Route path="game/:id"   element={<CardPage />} />
                 <Route path="news"  />
                                 
 
