@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import { videogames } from '../../../public/data/videogames'
+import { videogames } from '../../assets/data/videogames'
 
 const InfoCards = () => {
   return (
@@ -8,7 +8,7 @@ const InfoCards = () => {
     {/* Portada */}
     <div className="rounded-2xl mb-4">
       <img
-        src="https://as01.epimg.net/meristation/imagenes/2021/08/31/noticias/1630415976_693445_1630416052_portada_normal.jpg"
+        src="https://culturademancos.com/wp-content/uploads/2022/03/Portada-de-Horizon-Zero-Dawn-1-1024x576.jpg"
         className="w-full h-[500px] object-cover object-right md:object-top rounded-2xl"
       />
     </div>
@@ -16,10 +16,7 @@ const InfoCards = () => {
       {videogames.map((game) => (
         <Card 
           key={game.id}
-          image={game.image}
-          name={game.name}
-          category={game.type}
-          price={game.price}
+          {...game}
           ></Card>
       ))}
     </div>
