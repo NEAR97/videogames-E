@@ -1,163 +1,150 @@
 import React from 'react'
 
 const Footer = () => {
-    const footerNavs = [
-        {
-            label: "Resources",
-            items: [
-                {
-                    href: 'javascript:void()',
-                    name: 'contact'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Support'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Documentation'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Pricing'
-                },
-            ],
-        },
-        {
-            label: "About",
-            items: [
-                {
-                    href: 'javascript:void()',
-                    name: 'Terms'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'License'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Privacy'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'About US'
-                },
-            ]
-        },
-        {
-            label: "Explore",
-            items: [
-                {
-                    href: 'javascript:void()',
-                    name: 'Showcase'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Roadmap'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Languages'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Blog'
-                },
-            ]
-        },
-        {
-            label: "Company",
-            items: [
-                {
-                    href: 'javascript:void()',
-                    name: 'Partners'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Team'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Careers'
-                },
-            ],
-        }
-    ]
-
     return (
-        <footer className="pt-10 bg-[#1c1a18] rounded-2xl">
-            <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="justify-between items-center gap-12 md:flex">
-                    <div className="flex-1 max-w-lg">
-                        <h3 className="text-white text-2xl font-bold">
-                            Get our beautiful newsletter straight to your inbox.
-                        </h3>
-                    </div>
-                    <div className="flex-1 mt-6 md:mt-0">
-                        <form onSubmit={(e) => e.preventDefault()} className="flex items-center gap-x-3 md:justify-end">
-                            <div className="relative">
-                                <svg className="w-6 h-6 text-gray-400 absolute left-3 inset-y-0 my-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                                </svg>
-                                <input
-                                    type="email"
-                                    required
-                                    placeholder="Enter your email"
-                                    className="w-full pl-12 pr-3 py-2 text-gray-500 bg-white outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                                />
-                            </div>
-                            <button className="block w-auto py-3 px-4 font-medium text-sm text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow">
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <div className="flex-1 mt-16 space-y-6 justify-between sm:flex md:space-y-0">
-                    {
-                        footerNavs.map((item, idx) => (
-                            <ul
-                                className="space-y-4 text-gray-300"
-                                key={idx}
-                            >
-                                <h4 className="text-gray-200 font-semibold sm:pb-2">
-                                    {item.label}
-                                </h4>
-                                {
-                                    item.items.map(((el, idx) => (
-                                        <li key={idx}>
-                                            <a
-                                                href={el.href}
-                                                className="duration-150 hover:text-gray-400"
+        <footer>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-                                            >
-                                                {el.name}
-                                            </a>
-                                        </li>
-                                    )))
-                                }
-                            </ul>
-                        ))
-                    }
-                </div>
-                <div className="mt-10 py-10 border-t border-gray-700 items-center justify-between sm:flex">
-                    <p className="text-gray-300">© 2022 Float UI Inc. All rights reserved.</p>
-                    <div className="flex items-center gap-x-6 text-gray-400 mt-6">
-                        <a href="javascript:void()">
-                            <svg className="w-6 h-6 hover:text-gray-500 duration-150" fill="none" viewBox="0 0 48 48"><g clip-path="url(#a)"><path fill="currentColor" d="M48 24C48 10.745 37.255 0 24 0S0 10.745 0 24c0 11.979 8.776 21.908 20.25 23.708v-16.77h-6.094V24h6.094v-5.288c0-6.014 3.583-9.337 9.065-9.337 2.625 0 5.372.469 5.372.469v5.906h-3.026c-2.981 0-3.911 1.85-3.911 3.75V24h6.656l-1.064 6.938H27.75v16.77C39.224 45.908 48 35.978 48 24z" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs></svg>
-                        </a>
-                        <a href="javascript:void()">
-                            <svg className="w-6 h-6 hover:text-gray-500 duration-150" fill="none" viewBox="0 0 48 48"><g clip-path="url(#clip0_17_80)"><path fill="currentColor" d="M15.1 43.5c18.11 0 28.017-15.006 28.017-28.016 0-.422-.01-.853-.029-1.275A19.998 19.998 0 0048 9.11c-1.795.798-3.7 1.32-5.652 1.546a9.9 9.9 0 004.33-5.445 19.794 19.794 0 01-6.251 2.39 9.86 9.86 0 00-16.788 8.979A27.97 27.97 0 013.346 6.299 9.859 9.859 0 006.393 19.44a9.86 9.86 0 01-4.462-1.228v.122a9.844 9.844 0 007.901 9.656 9.788 9.788 0 01-4.442.169 9.867 9.867 0 009.195 6.843A19.75 19.75 0 010 39.078 27.937 27.937 0 0015.1 43.5z" /></g><defs><clipPath id="clip0_17_80"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs></svg>
-                        </a>
-                        <a href="javascript:void()">
-                            <svg className="w-6 h-6 hover:text-gray-500 duration-150" fill="none" viewBox="0 0 48 48"><g fill="currentColor" clip-path="url(#clip0_910_44)"><path fill-rule="evenodd" d="M24 1A24.086 24.086 0 008.454 6.693 23.834 23.834 0 00.319 21.044a23.754 23.754 0 003.153 16.172 23.98 23.98 0 0012.938 10.29c1.192.221 1.641-.518 1.641-1.146 0-.628-.024-2.45-.032-4.442-6.676 1.443-8.087-2.817-8.087-2.817-1.089-2.766-2.663-3.493-2.663-3.493-2.178-1.478.163-1.45.163-1.45 2.413.17 3.68 2.461 3.68 2.461 2.138 3.648 5.616 2.593 6.983 1.976.215-1.545.838-2.596 1.526-3.193-5.333-.6-10.937-2.647-10.937-11.791a9.213 9.213 0 012.472-6.406c-.246-.6-1.069-3.026.234-6.322 0 0 2.015-.64 6.602 2.446a22.904 22.904 0 0112.017 0c4.583-3.086 6.594-2.446 6.594-2.446 1.307 3.288.484 5.714.238 6.322a9.194 9.194 0 012.476 6.414c0 9.163-5.615 11.183-10.957 11.772.859.742 1.626 2.193 1.626 4.421 0 3.193-.028 5.762-.028 6.548 0 .636.433 1.38 1.65 1.146a23.98 23.98 0 0012.938-10.291 23.754 23.754 0 003.151-16.175A23.834 23.834 0 0039.56 6.69 24.086 24.086 0 0024.009 1H24z" clip-rule="evenodd" /><path d="M9.089 35.264c-.052.119-.243.154-.398.071-.155-.083-.27-.237-.214-.36.056-.122.242-.154.397-.07.155.082.274.24.215.359zM10.063 36.343a.4.4 0 01-.493-.11c-.155-.167-.187-.396-.068-.499.12-.102.334-.055.489.11.155.167.19.396.072.499zM11.008 37.714c-.147.103-.397 0-.536-.206a.395.395 0 010-.569c.147-.098.397 0 .537.202.139.202.143.47 0 .573zM12.292 39.042c-.131.146-.397.106-.616-.091-.219-.198-.27-.467-.139-.609.131-.142.397-.102.624.091.226.194.27.466.131.609zM14.092 39.816c-.06.186-.33.269-.6.19-.27-.08-.449-.3-.397-.49.051-.19.326-.277.6-.19.274.087.449.297.397.49zM16.056 39.95c0 .194-.223.36-.509.364-.286.004-.52-.154-.52-.348 0-.193.222-.36.508-.363.286-.004.52.15.52.347zM17.884 39.646c.036.194-.163.395-.45.443-.285.047-.536-.067-.572-.257-.035-.19.171-.395.45-.447.278-.05.536.068.572.261z" /></g><defs><clipPath id="clip0_910_44"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs></svg>
-                        </a>
-                        <a href="javascript:void()">
-                            <svg className="w-6 h-6 hover:text-gray-500 duration-150" fill="currentColor" viewBox="0 0 48 48"><g clip-path="url(#clip0_17_63)"><path d="M24 4.322c6.413 0 7.172.028 9.694.14 2.343.104 3.61.497 4.453.825 1.116.432 1.922.957 2.756 1.791.844.844 1.36 1.64 1.79 2.756.329.844.723 2.12.826 4.454.112 2.53.14 3.29.14 9.693 0 6.413-.028 7.172-.14 9.694-.103 2.344-.497 3.61-.825 4.453-.431 1.116-.957 1.922-1.79 2.756-.845.844-1.642 1.36-2.757 1.791-.844.328-2.119.722-4.453.825-2.532.112-3.29.14-9.694.14-6.413 0-7.172-.028-9.694-.14-2.343-.103-3.61-.497-4.453-.825-1.115-.431-1.922-.956-2.756-1.79-.844-.844-1.36-1.641-1.79-2.757-.329-.844-.723-2.119-.826-4.453-.112-2.531-.14-3.29-.14-9.694 0-6.412.028-7.172.14-9.694.103-2.343.497-3.609.825-4.453.431-1.115.957-1.921 1.79-2.756.845-.844 1.642-1.36 2.757-1.79.844-.329 2.119-.722 4.453-.825 2.522-.113 3.281-.141 9.694-.141zM24 0c-6.516 0-7.331.028-9.89.14-2.55.113-4.304.526-5.822 1.116-1.585.619-2.926 1.435-4.257 2.775-1.34 1.332-2.156 2.672-2.775 4.247C.666 9.806.253 11.55.141 14.1.028 16.669 0 17.484 0 24s.028 7.331.14 9.89c.113 2.55.526 4.304 1.116 5.822.619 1.585 1.435 2.925 2.775 4.257a11.732 11.732 0 004.247 2.765c1.528.591 3.272 1.003 5.822 1.116 2.56.112 3.375.14 9.89.14 6.516 0 7.332-.028 9.891-.14 2.55-.113 4.303-.525 5.822-1.116a11.732 11.732 0 004.247-2.765 11.732 11.732 0 002.766-4.247c.59-1.528 1.003-3.272 1.115-5.822.113-2.56.14-3.375.14-9.89 0-6.516-.027-7.332-.14-9.891-.112-2.55-.525-4.303-1.115-5.822-.591-1.594-1.407-2.935-2.747-4.266a11.732 11.732 0 00-4.247-2.765C38.194.675 36.45.262 33.9.15 31.331.028 30.516 0 24 0z" /><path d="M24 11.672c-6.806 0-12.328 5.522-12.328 12.328 0 6.806 5.522 12.328 12.328 12.328 6.806 0 12.328-5.522 12.328-12.328 0-6.806-5.522-12.328-12.328-12.328zm0 20.325a7.998 7.998 0 010-15.994 7.998 7.998 0 010 15.994zM39.694 11.184a2.879 2.879 0 11-2.878-2.878 2.885 2.885 0 012.878 2.878z" /></g><defs><clipPath id="clip0_17_63"><path d="M0 0h48v48H0z" /></clipPath></defs></svg>
-                        </a>
-                    </div>
-                </div>
+        {/* Top area: Blocks */}
+        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
+
+          {/* 1st block */}
+          <div className="sm:col-span-12 lg:col-span-3">
+            <div className="mb-2">
+             
             </div>
-        </footer>
+            <div className="text-sm text-[#E58D27]">
+              <a href="#0" className="text-[#ea983b] hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="#0" className="text-[#ea983b] hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
+            </div>
+          </div>
+
+          {/* 2nd block */}
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <h6 className="text-[#ea983b] font-medium mb-2">Products</h6>
+            <ul className="text-sm">
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Web Studio</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">DynamicBox Flex</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Programming Forms</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Integrations</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Command-line</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* 3rd block */}
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <h6 className="text-[#ea983b] font-medium mb-2">Resources</h6>
+            <ul className="text-sm">
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Documentation</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Tutorials & Guides</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Blog</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Support Center</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Partners</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* 4th block */}
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <h6 className="text-[#ea983b] font-medium mb-2">Company</h6>
+            <ul className="text-sm">
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Home</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">About us</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Company values</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Pricing</a>
+              </li>
+              <li className="mb-2">
+                <a href="#0" className="text-[#E58D27] hover:text-gray-900 transition duration-150 ease-in-out">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* 5th block */}
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
+            <h6 className="text-[#ea983b] font-medium mb-2">Subscribe</h6>
+            <p className="text-sm text-[#E58D27] mb-4">Get the latest news and articles to your inbox every month.</p>
+            <form>
+              <div className="flex flex-wrap mb-4">
+                <div className="w-full">
+                  <label className="block text-sm sr-only" htmlFor="newsletter">Email</label>
+                  <div className="relative flex items-center max-w-xs">
+                    <input id="newsletter" type="email" className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm" placeholder="Your email" required />
+                    <button type="submit" className="absolute inset-0 left-auto" aria-label="Subscribe">
+                      <span className="absolute inset-0 right-auto w-px -ml-px my-2 bg-gray-300" aria-hidden="true"></span>
+                      <svg className="w-3 h-3 fill-current text-[#E58D27] mx-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
+                      </svg>
+                    </button>
+                  </div>
+                  {/* Success message */}
+                  {/* <p className="mt-2 ttext-[#E58D27] text-sm">Thanks for subscribing!</p> */}
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        {/* Bottom area */}
+        <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
+
+          {/* Social as */}
+          <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+            <li>
+              <a href="#0" className="flex justify-center items-center text-gray-800 hover:text-gray-900 bg-[#E58D27] hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
+                <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z" />
+                </svg>
+              </a>
+            </li>
+            <li className="ml-4">
+              <a href="#0" className="flex justify-center items-center text-gray-800 hover:text-gray-900 bg-[#E58D27] hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Github">
+                <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z" />
+                </svg>
+              </a>
+            </li>
+            <li className="ml-4">
+              <a href="#0" className="flex justify-center items-center text-gray-800 hover:text-gray-900 bg-[#E58D27] hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Facebook">
+                <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          {/* Copyrights note */}
+          <div className="text-sm text-[#E58D27] mr-4">&copy; Cruip.com. All rights reserved.</div>
+
+        </div>
+
+      </div>
+    </footer>
     )
 }
 
