@@ -4,6 +4,8 @@ import HomePage from '../Home/HomePage'
 import CardPage from '../Home/CardPage'
 import Cart from '../../Cart/Cart'
 import News from '../News/News'
+import WishList from '../WishList/WishList'
+import Streams from '../Streams/Streams'
 
 const AppRouter = () => {
   return (
@@ -11,12 +13,14 @@ const AppRouter = () => {
         <div className="">
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="store"  />
+                <Route path="/store" element={<HomePage/>} />
                 
-                <Route path="streams"  />
+                
                 <Route path="game/:id"   element={<CardPage />} />
                 <Route path='/cart' element={<Cart/>}/>
                 <Route path='/news' element={<News/>}></Route>
+                <Route path='/wishlist' element={<WishList/>}></Route>
+                <Route path='/streams' element={<Streams/>}></Route>
                                 
 
                 <Route path="/"  />

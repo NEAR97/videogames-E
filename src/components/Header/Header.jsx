@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { RiShoppingCart2Line, RiHeart3Line, RiMenu2Line, RiCloseLine } from "react-icons/ri";
 import Cart from '../../Cart/Cart'
+import { SiAiqfome } from "react-icons/si";
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -21,16 +22,16 @@ const Header = () => {
                 </button>
                 <ul className='mt-20'>
                     <NavLink to="/" className="text-4xl block text-center p-4 ">
-                        Home
+                        <SiAiqfome/>
                     </NavLink>
                     <NavLink to="/store" className="text-4xl block text-center p-4">
-                        Store
+                        Tienda
                     </NavLink>
                     <NavLink to="/streams" className="text-4xl block text-center p-4">
                         Streams
                     </NavLink>
                     <NavLink to="/news" className="text-4xl block text-center p-4" >
-                        News
+                        Noticias
                     </NavLink>
                 </ul>
 
@@ -38,12 +39,12 @@ const Header = () => {
             <ul className="hidden lg:flex items-center gap-6 mb-4">
                 <li>
                     <NavLink to="/" className="text-4xl block text-center p-4 hover:text-[#E58D27] transition-colors">
-                        Home
+                        <SiAiqfome/>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="/store" className="text-4xl block text-center p-4 hover:text-[#E58D27] transition-colors">
-                        Store
+                        Tienda
                     </NavLink>
                 </li>
                 <li>
@@ -53,7 +54,7 @@ const Header = () => {
                 </li>
                 <li>
                     <NavLink to="/news" className="text-4xl block text-center p-4 hover:text-[#E58D27] transition-colors" >
-                        News
+                        Noticias
                     </NavLink>
                 </li>
             </ul>
