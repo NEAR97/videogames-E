@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { RiShoppingCart2Line, RiHeart3Line, RiMenu2Line, RiCloseLine } from "react-icons/ri";
+import Cart from '../../Cart/Cart'
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
+    
     return (
         <header className='h-[7vh] lg:h-[10vh] text-gray-400 py-4 px-10 flex items-center justify-between z-40'>
             <button
@@ -64,7 +66,7 @@ const Header = () => {
                 </li>
                 <li>
                     <NavLink to="/cart">
-                        <button className="hover:text-[#E58D27] transition-colors">< RiShoppingCart2Line /></button>
+                        <button className="hover:text-[#E58D27] transition-colors" >< RiShoppingCart2Line /></button>
                     </NavLink>
                 </li>
                 <li>
